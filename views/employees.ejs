@@ -39,8 +39,9 @@
                             <td><%=employee.address %><%=employee.city %><%=employee.country %></td>
                             <td><%=employee.salary %></td>
                             <td><%=employee.role %></td>
-                            <td><a href="/updateEmployee.html?id=${employee.employeeId}">Update</a></td>
-                            <td><a href="/deleteEmployee.html?id=${employee.employeeId}">Delete</a></td>
+                            <td><a href="/updateEmployee?id=<%= employee.employee_number %>">Update</a></td>
+                            <td><a href="/deleteEmployee?id=<%= employee.employee_number %>" 
+                                onclick="return confirm('Are you sure you want to delete?')">Delete</a></td>
                         </tr>
                        <% })  %>
                     </tbody>
