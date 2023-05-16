@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const getEmployees = require('./controllers/employees');
 const addEmployee = require('./controllers/addEmployee');
+const deleteEmployee = require('./controllers/deleteEmployee');
+const editEmployee = require('./controllers/editEmployee');
 
 
 
@@ -24,6 +26,9 @@ app.get('/', (req, res) => {
 app.get('/employees', getEmployees);
 app.get('/addEmployee', addEmployee.getAddEmployee);
 app.post('/addEmployee', addEmployee.addEmployee);
+app.get('/deleteEmployee', deleteEmployee.deleteEmployeeById);
+app.get('/updateEmployee', editEmployee.getUpdateEmployeeById);
+app.post('/updateEmployee', editEmployee.updateEmployeeById);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);

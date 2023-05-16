@@ -28,19 +28,19 @@
             </div>
 
             <!-- form -->
-            <form action="/addEmployee" enctype="multipart/form-data" method="POST" style=" margin-top: 35px;">
+            <form action="/updateEmployee?id=<%= employee.employee_number %>"  method="POST" style=" margin-top: 35px;">
 
                 <!-- First and Last Name -->
                 <div class="row mb-4">
                     <div class="col">
                         <label class="form-label fw-bold">First Name</label>
-                        <input type="text" placeholder="Enter your First Name" name="firstNameField"
+                        <input type="text" placeholder="Enter your First Name" value="<%= employee.first_name %>" name="firstNameField"
                             class="col-xs-4 form-control form-control-lg" id="firstname">
                     </div>
                     <div class="col">
                         <label class="form-label fw-bold">Last Name</label>
                         <input type="text" placeholder="Enter your Last Name" name="lastNameField"
-                            class="col-xs-4 form-control form-control-lg" id="lastname">
+                           value="<%= employee.last_name %>" class="col-xs-4 form-control form-control-lg" id="lastname">
 
                     </div>
                 </div>
@@ -51,12 +51,12 @@
                     <div class="col">
                         <label class="form-label fw-bold">Address</label>
                         <input type="text" placeholder="Enter your Address" name="addressField"
-                            class="col-xs-4 form-control form-control-lg" id="address">
+                            value="<%= employee.address %>" class="col-xs-4 form-control form-control-lg" id="address">
                     </div>
                     <div class="col">
                         <label class="form-label fw-bold">City</label>
                         <input type="text" placeholder="Enter your City" name="cityField"
-                            class="col-xs-4 form-control form-control-lg" id="city">
+                           value="<%= employee.city %>" class="col-xs-4 form-control form-control-lg" id="city">
 
                     </div>
                 </div>
@@ -67,13 +67,7 @@
                     <div class="col">
                         <label class="form-label fw-bold">Country</label>
                         <input type="text" placeholder="Enter your Country" name="countryField"
-                            class="col-xs-4 form-control form-control-lg" id="country">
-                    </div>
-                    <div class="col">
-                        <label class="form-label fw-bold">Post Code</label>
-                        <input type="text" placeholder="Post Code..." name="postcodeField"
-                            class="col-xs-4 form-control form-control-lg" id="postcode">
-
+                           value="<%= employee.country %>" class="col-xs-4 form-control form-control-lg" id="country">
                     </div>
                 </div>
                 <!--end country and postcode -->
@@ -83,12 +77,12 @@
                     <div class="col">
                         <label class="form-label fw-bold">Salary</label>
                         <input type="text" placeholder="Salary" name="salaryField"
-                            class="col-xs-4 form-control form-control-lg" id="salary">
+                           value="<%= employee.salary %>" class="col-xs-4 form-control form-control-lg" id="salary">
                     </div>
                     <div class="col">
                         <label class="form-label fw-bold">Role</label>
                         <input type="text" placeholder="Employee Role" name="RoleField"
-                            class="col-xs-4 form-control form-control-lg" id="Role">
+                          value="<%= employee.role %>"  class="col-xs-4 form-control form-control-lg" id="Role">
                     </div>
                 </div>
                 <!--end salary and role -->

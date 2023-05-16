@@ -2,7 +2,7 @@
   "name": "kainos",
   "version": "1.0.0",
   "description": "kainos code connect challenge event repo",
-  "main": "read.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
