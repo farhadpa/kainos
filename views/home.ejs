@@ -47,6 +47,7 @@
             <!--end nav tags -->
 
             <!-- user login in -->
+           <% if(isAuth) { %> 
             <div class="dropdown">
                 <div class="nav-item px-3 py-2" id="logindropdown" data-bs-toggle="dropdown" aria-expanded="false"
                     style="margin-right: 70px">
@@ -55,15 +56,17 @@
                     </a>
                 </div>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="left: -88px;">
-                    <li><a class="dropdown-item" href="#">Login</a></li>
                     <li><a class="dropdown-item" href="/addEmployee">Add
                             new employee</a></li>
-                    <li><a class="dropdown-item" href="/employee">Edit/Delete employee record</a>
+                    <li><a class="dropdown-item" href="/employees">Edit/Delete employee record</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    <li><a class="dropdown-item" href="/logout">Log Out</a></li>
                 </ul>
             </div>
+            <% } else { %>
+            <div class="nav-item px-3 py-2"><a href="/login" class="nav-link text-dark fw-bold">Login</a></div>
             <!--login btn with dropdown -->
+            <% } %>
     </nav>
 
 

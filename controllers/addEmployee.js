@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const employees = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
 const last_employee_index = employees.length;
-const last_employee_number = employees[last_employee_index - 1].employee_number;
+const last_employee_number =parseInt(employees[last_employee_index - 1].employee_number);
 const employee_number = last_employee_number + 1;
 
 const getAddEmployee = (req, res) => {
