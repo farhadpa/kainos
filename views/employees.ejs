@@ -32,6 +32,17 @@
                         </tr>
                     </thead>
                     <tbody id="box">
+                       <%  employees.forEach((employee) => { %>
+                        <tr>
+                            <td><%=employee.employee_number %></td>
+                            <td><%=employee.first_name %><%=employee.last_name %></td>
+                            <td><%=employee.address %><%=employee.city %><%=employee.country %></td>
+                            <td><%=employee.salary %></td>
+                            <td><%=employee.role %></td>
+                            <td><a href="/updateEmployee.html?id=${employee.employeeId}">Update</a></td>
+                            <td><a href="/deleteEmployee.html?id=${employee.employeeId}">Delete</a></td>
+                        </tr>
+                       <% })  %>
                     </tbody>
                 </table>
             </div>

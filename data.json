@@ -6,7 +6,6 @@
     "address": "38098 Vahlen Way",
     "city": "Calmar",
     "country": "Canada",
-    "post_code": "S0G",
     "salary": 601506,
     "role": "Junior Executive"
   },
@@ -17,7 +16,6 @@
     "address": "54395 Jenifer Place",
     "city": "Mirontsi",
     "country": "Comoros",
-    "post_code": null,
     "salary": 538549,
     "role": "Geological Engineer"
   },
@@ -28,7 +26,6 @@
     "address": "6 Alpine Court",
     "city": "Eskilstuna",
     "country": "Sweden",
-    "post_code": "633 47",
     "salary": 522368,
     "role": "Staff Accountant III"
   },
@@ -39,7 +36,6 @@
     "address": "8 American Ash Lane",
     "city": "La Jagua de Ibirico",
     "country": "Colombia",
-    "post_code": "203027",
     "salary": 238999,
     "role": "Payment Adjustment Coordinator"
   },
@@ -50,7 +46,6 @@
     "address": "4 Daystar Trail",
     "city": "Moss",
     "country": "Norway",
-    "post_code": "1513",
     "salary": 131515,
     "role": "Budget/Accounting Analyst I"
   },
@@ -61,7 +56,6 @@
     "address": "80 Quincy Terrace",
     "city": "North Little Rock",
     "country": "United States",
-    "post_code": "72118",
     "salary": 157128,
     "role": "GIS Technical Architect"
   },
@@ -72,7 +66,6 @@
     "address": "5451 Independence Junction",
     "city": "El Aguacate",
     "country": "Mexico",
-    "post_code": "40687",
     "salary": 711928,
     "role": "Marketing Assistant"
   },
@@ -83,7 +76,6 @@
     "address": "7 Green Street",
     "city": "Newark",
     "country": "United States",
-    "post_code": "07104",
     "salary": 19946,
     "role": "Help Desk Technician"
   },
@@ -94,7 +86,6 @@
     "address": "48528 Little Fleur Place",
     "city": "Olonets",
     "country": "Russia",
-    "post_code": "186000",
     "salary": 106051,
     "role": "Senior Editor"
   },
@@ -105,7 +96,6 @@
     "address": "97 Barby Circle",
     "city": "Bihać",
     "country": "Bosnia and Herzegovina",
-    "post_code": null,
     "salary": 155712,
     "role": "Community Outreach Specialist"
   }
