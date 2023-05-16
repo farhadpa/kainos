@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -23,12 +23,12 @@
         <div class="container">
             <div class=" text-center mb-0">
                 <h2 class="position-relative d-inline-block">
-                    Edit Employee Record
+                    Add Employee Record
                 </h2>
             </div>
 
             <!-- form -->
-            <form action="/addEmployee" enctype="multipart/form-data" method="POST" style=" margin-top: 35px;">
+            <form action="/addEmployee"  method="POST" style=" margin-top: 35px;">
 
                 <!-- First and Last Name -->
                 <div class="row mb-4">
@@ -69,12 +69,12 @@
                         <input type="text" placeholder="Enter your Country" name="countryField"
                             class="col-xs-4 form-control form-control-lg" id="country">
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                         <label class="form-label fw-bold">Post Code</label>
                         <input type="text" placeholder="Post Code..." name="postcodeField"
                             class="col-xs-4 form-control form-control-lg" id="postcode">
 
-                    </div>
+                    </div> -->
                 </div>
                 <!--end country and postcode -->
 
@@ -94,7 +94,7 @@
                 <!--end salary and role -->
 
                 <!-- Submit button -->
-                <input type="submit" class="btn btn-primary btn-block mb-4" style="margin-left: 40%;" value="Update">
+                <input type="submit" class="btn btn-primary btn-block mb-4" style="margin-left: 40%;" value="Submit">
                 <!--end Submit button -->
             </form>
             <!-- form end -->
